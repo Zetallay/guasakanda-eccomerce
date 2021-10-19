@@ -1,0 +1,41 @@
+.header{
+    background-color: #F16F55;
+    height: 100px;
+    display: flex;
+    padding: 15px 150px;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-logo{
+        height: 75px;
+        width: 75px;
+    }
+
+    .header-search{
+        background-color: #F16F55;
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 15px;
+        width: 50%;
+        max-width: 500px;
+        font-size: 16px;
+    }
+
+    .header-options{
+        display: none;
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        li{
+            padding: 0 15px;
+        }
+
+        & li:last-of-type{
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+
+}
