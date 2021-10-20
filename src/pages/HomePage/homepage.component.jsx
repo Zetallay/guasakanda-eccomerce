@@ -1,9 +1,11 @@
 import React from 'react';
 
-const HomePage = () => {
+import SlideCategories from '../../Components/SlideCategories/slideCategories.component';
+
+const HomePage = (props) => {
     return (
         <div className='Homepage'>
-            
+            <SlideCategories categories={props.categories}/>
         </div>
     );
 };
