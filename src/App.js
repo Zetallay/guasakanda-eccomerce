@@ -16,7 +16,15 @@ import categories from './categories'
   constructor(props) {
     super(props);
     this.state={
-      shopProducts:[],
+      shopProducts:[{
+        category:"",
+        description: "",
+        id: 0,
+        image: "",
+        price: 0,
+        rating: {rate: 0, count: 0},
+        title: "",
+    }],
       categories:categories
     }
   }
@@ -31,7 +39,7 @@ import categories from './categories'
        <div className="App">
          <Header />
          <Switch>
-           <Route exact path='/' render={(props)=><HomePage {...props} categories={categories}/>}/>
+           <Route exact path='/' render={(props)=><HomePage {...props} categories={this.state.categories} shopProducts={this.state.shopProducts}/>}/>
            <Route exact path='/signin' component={Signin}/>
          </Switch>
        </div>

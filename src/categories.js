@@ -11,12 +11,12 @@ const categories = [
     },
     {
         id:3,
-        name:"mens clothing",
+        name:"men's clothing",
         categoryCoverImg: 'https://images.unsplash.com/photo-1543322748-33df6d3db806?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
     },
     {
         id:4,
-        name:"womens clothing",
+        name:"women's clothing",
         categoryCoverImg: 'https://images.unsplash.com/photo-1589810635657-232948472d98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',  
     },
 ]
