@@ -13,6 +13,18 @@
         column-gap: 25px;
         
         .slide-item-featured{
+            cursor: pointer;
+            // font-size: 16px;
+
+            &:hover{
+                color: #F37F68;
+
+                .slide-item-featured-details{
+                    .slide-item-featured-details-price{
+                        color: black;
+                    }
+                }
+            }
 
             .slide-item-featured-image{
                 width: 160px;
@@ -34,11 +46,12 @@
                     }
                 }
             }
-
-
+            
             .slide-item-featured-details{
                 padding: 15px 0;
             }
+
+
         }
     }
 }

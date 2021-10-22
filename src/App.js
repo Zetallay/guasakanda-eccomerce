@@ -11,6 +11,7 @@ import HomePage from './pages/HomePage/homepage.component'
 import axios from 'axios'
 
 import categories from './categories'
+import ProductDetail from './pages/ProductDetail/productDetail.component';
 
  class App extends React.Component {
   constructor(props) {
@@ -41,6 +42,7 @@ import categories from './categories'
          <Switch>
            <Route exact path='/' render={(props)=><HomePage {...props} categories={this.state.categories} shopProducts={this.state.shopProducts}/>}/>
            <Route exact path='/signin' component={Signin}/>
+           <Route exact path='/pd/:productName/:id' component={ProductDetail}/>
          </Switch>
        </div>
      );
